@@ -76,7 +76,7 @@ for p in range(len(pdfsList)):
     pdfFileObj = open(py[0] + '/' + pdfsList[p], 'rb')
 
     # creating a pdf reader object
-    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+    pdfReader = PyPDF2.PdfFileReader(pdfFileObj, strict="false")
 
     # printing number of pages in pdf file
     # print(pdfReader.numPages)
